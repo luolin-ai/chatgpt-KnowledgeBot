@@ -4,6 +4,6 @@ CHATGPT = "chatGPT"
 BAIDU = "baidu"
 CHATGPTONAZURE = "chatGPTOnAzure"
 LINKAI = "linkai"
-FASTGPT = "fastGPT"
+luolinai = "luolinai"
 
 VERSION = "1.3.0"

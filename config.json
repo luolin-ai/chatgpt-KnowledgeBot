@@ -1,6 +1,6 @@
 {
-  "luolinai_api_key": "",
-  "luolinai_model_id": "",
+  "luolinai_api_key": "输入你的知识库密钥",
+  "luolinai_model_id": "输入你的知识库模型id",
   "max_single_chat_replies": 4,
   "max_group_chat_replies": 4,
   "ad_message": "122这是一条广告信息，请点击这里查看更多。",

@@ -102,13 +102,18 @@ available_setting = {
     # 知识库平台配置
     "linkai_api_key": "",
     "linkai_app_code": "",
-     # fastgpt知识库平台配置fastgpt
-    "fastgpt_api_key": "", # your_fastgpt_api_key
-     "chat_id": "",#your_chat_id
-    "fastgpt_model_id": "",#your_model_id
+    # luolinai知识库平台配置luolinai
+    "luolinai_api_key": "",  # your_luolinai_api_key
+    "chat_id": "",  # your_chat_id
+    "luolinai_model_id": "",  # your_model_id
+    "max_single_chat_replies": "",
+    "max_group_chat_replies": "",
+    "ad_message": "",  # 这是一条广告信息，请点击这里查看更多。,
+    "max_daily_replies": "",
+
 }
 
-    
+
 
 
 
