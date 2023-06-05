@@ -1,5 +1,21 @@
-# 简介
+# "KnowledgeBot-WeChatGPT
 
+## 项目介绍:
+KnowledgeBot-WeChatGPT 是一个基于知识库的微信机器人，它结合了私有化的知识和 GPT 预训练模型，为用户提供智能的对话和知识交流。
+
+该项目利用私有化的知识库作为机器人的知识基础，其中包含了丰富的领域知识、常见问题和解决方案。结合 GPT 预训练模型，KnowledgeBot-WeChatGPT 可以根据用户的提问和对话内容，通过对知识库和 GPT 模型的综合分析，给出准确、有用的回答和建议。
+
+KnowledgeBot-WeChatGPT 在微信平台上实现了自动回复的功能，用户可以通过与机器人进行对话来获取专业的解答、提供实时信息和获取指导。它能够理解用户的问题，并根据知识库和 GPT 模型的结合，提供个性化、高质量的回复，满足用户的各种需求。
+
+除了基于知识库的回答，KnowledgeBot-WeChatGPT 还充分利用了 GPT 模型的创造性和语言理解能力，能够进行富有趣味性的聊天、角色扮演和文字冒险等交互。它可以与用户进行有趣的对话，提供娱乐和互动体验。
+
+KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交流体验，通过结合私有化的知识库和 GPT 预训练模型，为用户提供个性化、准确的回答和互动。它将成为用户在微信平台上获取知识和享受智能交流的首选伙伴。
+
+
+知识库配置机器人：https://luolinai.feishu.cn/docx/FC01dhmABoT7ZtxrXBwcomN1nmg
+[说明/知识库接口说明.md](https://github.com/luolin-ai/KnowledgeBot/blob/575c536d501438ffcb3e3ef678ddaf0deea561d6/%E8%AF%B4%E6%98%8E/%E7%9F%A5%E8%AF%86%E5%BA%93%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md)
+
+让我们一起与 KnowledgeBot-WeChatGPT 探索知识的深度和语言的魅力，体验与智能机器人的精彩互动！
 > ChatGPT近期以强大的对话和信息整合能力风靡全网，可以写代码、改论文、讲故事，几乎无所不能，这让人不禁有个大胆的想法，能否用他的对话模型把我们的微信打造成一个智能机器人，可以在与好友对话中给出意想不到的回应，而且再也不用担心女朋友影响我们 ~~打游戏~~ 工作了。
 
 最新版本支持的功能如下：
@@ -14,15 +30,6 @@
 
 # 快速开始
 
-## 准备
-
-### 1. OpenAI账号注册
-
-前往 [OpenAI注册页面](https://beta.openai.com/signup) 创建账号，参考这篇 [教程](https://www.pythonthree.com/register-openai-chatgpt/) 可以通过虚拟手机号来接收验证码。创建完账号则前往 [API管理页面](https://beta.openai.com/account/api-keys) 创建一个 API Key 并保存下来，后面需要在项目中配置这个key。
-
-> 项目中默认使用的对话模型是 gpt3.5 turbo，计费方式是约每 500 汉字 (包含请求和回复) 消耗 $0.002，图片生成是每张消耗 $0.016。
-
-### 2.运行环境
 
 支持 Linux、MacOS、Windows 系统（可在Linux服务器上长期运行)，同时需安装 `Python`。
 > 建议Python版本在 3.7.1~3.9.X 之间，推荐3.8版本，3.10及以上版本在 MacOS 可用，其他系统上不确定能否正常运行。
@@ -72,10 +79,11 @@ pip3 install azure-cognitiveservices-speech
 
 ```bash
 # config.json文件内容示例
+# config.json文件内容示例
 {
-  "open_ai_api_key": "YOUR API KEY",                          # 填入上面创建的 OpenAI API KEY
+    "luolinai_api_key": "",                                    # 填入创建的 知识库api_key
+  "luolinai_model_id":                                        # 填入上面创建的模型idmodel_id
   "model": "gpt-3.5-turbo",                                   # 模型名称。当use_azure_chatgpt为true时，其名称为Azure上model deployment名称
-  "proxy": "127.0.0.1:7890",                                  # 代理客户端的ip和端口
   "single_chat_prefix": ["bot", "@bot"],                      # 私聊时文本需要包含该前缀才能触发机器人回复
   "single_chat_reply_prefix": "[bot] ",                       # 私聊时自动回复的前缀，用于区分真人
   "group_chat_prefix": ["@bot"],                              # 群聊时包含该前缀则会触发机器人回复
@@ -89,9 +97,31 @@ pip3 install azure-cognitiveservices-speech
   "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",  # 人格描述
   # 订阅消息，公众号和企业微信channel中请填写，当被订阅时会自动回复，可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
   "subscribe_msg": "感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持角色扮演和文字冒险等丰富插件。\n输入{trigger_prefix}#help 查看详细指令。"
-  "luolinai_api_key": "",
-  "luolinai_model_id":
+基于知识库的企业微信应用号配置
+{
+  "luolinai_api_key": "请输入您的知识库密钥",
+  "luolinai_model_id": "请输入您的知识库模型ID",
+  "image_create_prefix": [
+    "画",
+    "看",
+    "找"
+  ],
+  "speech_recognition": false,
+  "group_speech_recognition": false,
+  "voice_reply_voice": false,
+  "conversation_max_tokens": 1000,
+  "expires_in_seconds": 3600,
+  "channel_type": "wechatcom_app",
+  "wechatcom_corp_id": "请输入您的企业ID",
+  "wechatcomapp_secret": "请输入您的应用Secret",
+  "wechatcomapp_agent_id": "请输入您的应用Agent ID",
+  "wechatcomapp_token": "请输入您的应用Token",
+  "wechatcomapp_aes_key": "请输入您的应用AES Key",
+  "wechatcomapp_port": 9200
 }
+
+}
+```
 ```
 **配置说明：**
 
