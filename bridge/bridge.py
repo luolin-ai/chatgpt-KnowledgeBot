@@ -23,8 +23,8 @@ class Bridge(object):
             self.btype["chat"] = const.OPEN_AI
         if conf().get("use_azure_chatgpt", False):
             self.btype["chat"] = const.CHATGPTONAZURE
-        if conf().get("luolinai_api_key"):
-            self.btype["chat"] = const.luolinai
+        if conf().get("fastgpt_api_key"):
+            self.btype["chat"] = const.FASTGPT
         self.bots = {}
 
     def get_bot(self, typename):

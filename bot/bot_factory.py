@@ -38,8 +38,8 @@ def create_bot(bot_type):
         from bot.linkai.link_ai_bot import LinkAIBot
         return LinkAIBot()
 
-    elif bot_type == const.luolinai:
-        from bot.luolinai.luolinai_bot import luolinaiBot
-        return luolinaiBot()
+    elif bot_type == const.FASTGPT:
+        from bot.fastgpt.fast_gpt_bot import FastGptBot
+        return FastGptBot()
 
     raise RuntimeError("Unsupported bot type: {}".format(bot_type))
