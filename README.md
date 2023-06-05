@@ -1,6 +1,6 @@
 # 简介
 # # KnowledgeBot-WeChatGPT
-
+基于微信机器人zhayujie/chatgpt-on-wechat结合fastGPT知识库的一个知识库微信、企业微信、飞书机器人
 # ## 项目名称: "KnowledgeBot-WeChatGPT"
 
 项目介绍:
@@ -10,6 +10,11 @@ KnowledgeBot-WeChatGPT 在微信平台上实现了自动回复的功能，用户
 除了基于知识库的回答，KnowledgeBot-WeChatGPT 还充分利用了 GPT 模型的创造性和语言理解能力，能够进行富有趣味性的聊天、角色扮演和文字冒险等交互。它可以与用户进行有趣的对话，提供娱乐和互动体验。
 KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交流体验，通过结合私有化的知识库和 GPT 预训练模型，为用户提供个性化、准确的回答和互动。它将成为用户在微信平台上获取知识和享受智能交流的首选伙伴。
 让我们一起与 KnowledgeBot-WeChatGPT 探索知识的深度和语言的魅力，体验与智能机器人的精彩互动！
+
+扫码加我入交流群![weChat](https://github.com/luolin-ai/KnowledgeBot/assets/135555634/b3a9bc1c-7e96-463c-8e35-fa8353ba2131)
+关注公众号了解更多
+![571d92f9b01ff97c6a1ee73b604f7bd7](https://github.com/luolin-ai/KnowledgeBot/assets/135555634/75951cf6-280f-40b6-b6de-526a44223858)
+
 
 最新版本支持的功能如下：
 
@@ -196,9 +201,7 @@ nohup python3 app.py & tail -f nohup.out          # 在后台运行程序并通�
 
 > **特殊指令：** 用户向机器人发送 **#reset** 即可清空该用户的上下文记忆。
 
-#
 
-## 联系
 
 
 
