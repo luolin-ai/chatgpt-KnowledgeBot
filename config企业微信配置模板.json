@@ -1,0 +1,21 @@
+{
+  "luolinai_api_key": "请输入您的知识库密钥",
+  "luolinai_model_id": "请输入您的知识库模型ID",
+  "image_create_prefix": [
+    "画",
+    "看",
+    "找"
+  ],
+  "speech_recognition": false,
+  "group_speech_recognition": false,
+  "voice_reply_voice": false,
+  "conversation_max_tokens": 1000,
+  "expires_in_seconds": 3600,
+  "channel_type": "wechatcom_app,",
+  "wechatcom_corp_id": "请输入您的企业ID",
+  "wechatcomapp_secret": "请输入您的应用Secret",
+  "wechatcomapp_agent_id": "请输入您的应用Agent ID",
+  "wechatcomapp_token": "请输入您的应用Token",
+  "wechatcomapp_aes_key": "请输入您的应用AES Key",
+  "wechatcomapp_port": 9200
+}
