@@ -1,4 +1,4 @@
-具体文件还在更新中，明天所有完整的就可以用了# 简介   
+了# 简介   
 # # KnowledgeBot-WeChatGPT
 基于微信机器人zhayujie/chatgpt-on-wechat结合fastGPT知识库的一个知识库微信、企业微信、飞书机器人
 # ## 项目名称: "KnowledgeBot-WeChatGPT"
@@ -11,6 +11,8 @@ KnowledgeBot-WeChatGPT 在微信平台上实现了自动回复的功能，用户
 KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交流体验，通过结合私有化的知识库和 GPT 预训练模型，为用户提供个性化、准确的回答和互动。它将成为用户在微信平台上获取知识和享受智能交流的首选伙伴。
 让我们一起与 KnowledgeBot-WeChatGPT 探索知识的深度和语言的魅力，体验与智能机器人的精彩互动！
 
+###欢迎wxKnowledgeBot群
+![04be8dc33ffc40738aaff2926c6a1dd](https://github.com/luolin-ai/KnowledgeBot/assets/135555634/722e30ed-d1b6-4904-af45-c7680132c3d3)
 
 
 最新版本支持的功能如下：
