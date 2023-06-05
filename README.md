@@ -1,4 +1,4 @@
-# 简介
+具体文件还在更新中，明天所有完整的就可以用了# 简介   
 # # KnowledgeBot-WeChatGPT
 基于微信机器人zhayujie/chatgpt-on-wechat结合fastGPT知识库的一个知识库微信、企业微信、飞书机器人
 # ## 项目名称: "KnowledgeBot-WeChatGPT"
