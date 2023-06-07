@@ -106,25 +106,108 @@ pip3 install azure-cognitiveservices-speech
 然后在`config.json`中填入配置，以下是对默认配置的说明，可根据需要进行自定义修改（请去掉注释）：
 
 ```bash
-# config.json文件内容示例
-{
-    "luolinai_api_key": "",                                    # 填入创建的 知识库api_key
-  "luolinai_model_id":                                        # 填入上面创建的模型idmodel_id
-  "model": "gpt-3.5-turbo",                                   # 模型名称。当use_azure_chatgpt为true时，其名称为Azure上model deployment名称
-  "single_chat_prefix": ["bot", "@bot"],                      # 私聊时文本需要包含该前缀才能触发机器人回复
-  "single_chat_reply_prefix": "[bot] ",                       # 私聊时自动回复的前缀，用于区分真人
-  "group_chat_prefix": ["@bot"],                              # 群聊时包含该前缀则会触发机器人回复
-  "group_name_white_list": ["ChatGPT测试群", "ChatGPT测试群2"], # 开启自动回复的群名称列表
-  "group_chat_in_one_session": ["ChatGPT测试群"],              # 支持会话上下文共享的群名称  
-  "image_create_prefix": ["画", "看", "找"],                   # 开启图片回复的前缀
-  "conversation_max_tokens": 1000,                            # 支持上下文记忆的最多字符数
-  "speech_recognition": false,                                # 是否开启语音识别
-  "group_speech_recognition": false,                          # 是否开启群组语音识别
-  "use_azure_chatgpt": false,                                 # 是否使用Azure ChatGPT service代替openai ChatGPT service. 当设置为true时需要设置 open_ai_api_base，如 https://xxx.openai.azure.com/
-  "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",  # 人格描述
-  # 订阅消息，公众号和企业微信channel中请填写，当被订阅时会自动回复，可使用特殊占位符。目前支持的占位符有{trigger_prefix}，在程序中它会自动替换成bot的触发词。
-  "subscribe_msg": "感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持角色扮演和文字冒险等丰富插件。\n输入{trigger_prefix}#help 查看详细指令。"
-基于知识库的企业微信应用号配置
+配置说明
+{{
+luolinai_api_key：
+
+作用：洛林AI的API密钥，用于向洛林AI平台发送请求。
+使用方法：将您在洛林AI平台获得的API密钥填写到该配置项中。
+luolinai_model_id：
+
+作用：指定要使用的洛林AI模型的ID。
+使用方法：将您要使用的洛林AI模型的ID填写到该配置项中。
+max_single_chat_replies：
+
+作用：单聊模式下每个用户每轮对话的最大回复次数限制。
+使用方法：根据您的需求，设置单聊模式下每个用户每轮对话的最大回复次数。
+max_group_chat_replies：
+
+作用：群聊模式下每个用户每轮对话的最大回复次数限制。
+使用方法：根据您的需求，设置群聊模式下每个用户每轮对话的最大回复次数。
+ad_message：
+
+作用：广告消息，将插入到洛林AI的回复中，用于广告宣传。
+使用方法：将您想要插入到洛林AI回复中的广告消息内容填写到该配置项中。
+single_chat_prefix：
+
+作用：单聊模式下触发对话的关键词列表。当用户发送消息中包含其中任一关键词时，将被视为单聊模式。
+使用方法：根据您的需求，设置触发单聊模式的关键词列表。
+single_chat_reply_prefix：
+
+作用：单聊模式下洛林AI回复消息时的前缀，用于区分洛林AI的回复。
+使用方法：根据您的需求，设置洛林AI回复消息时的前缀。
+group_chat_prefix：
+
+作用：群聊模式下触发对话的关键词列表。当用户在群聊中发送消息包含其中任一关键词时，将被视为群聊模式。
+使用方法：根据您的需求，设置触发群聊模式的关键词列表。
+group_name_white_list：
+
+作用：允许进行群聊的群组名称白名单。只有在白名单中的群组中的消息才会触发群聊模式。
+使用方法：根据您的需求，设置允许进行群聊的群组名称白名单。
+group_chat_in_one_session：
+
+作用：允许在同一个会话中进行群聊的群组名称列表。同一个群组的消息将在同一个会话中进行处理。
+使用方法：根据您的需求，设置允许在同一个会话中进行群聊的群组名称列表。
+image_create_prefix：
+
+作用：触发洛林AI生成图片的关键词列表。当用户发送消息以列表中的关键词开头时，洛林AI将尝试生成图片。
+使用方法：根据您的需求，设置触发生成图片的关键词列表。
+speech_recognition：
+
+作用：是否启用语音识别功能，允许用户通过语音进行对话。
+使用方法：根据您的需求，设置是否启用语音识别功能。
+group_speech_recognition：
+
+作用：是否在群聊模式下启用语音识别功能，允许群聊中的语音消息进行识别。
+使用方法：根据您的需求，设置是否在群聊模式下启用语音识别功能。
+voice_reply_voice：
+
+作用：是否启用语音回复功能，允许洛林AI以语音形式回复用户。
+使用方法：根据您的需求，设置是否启用语音回复功能。
+conversation_max_tokens：
+
+作用：每次对话中的最大令牌数，用于限制对话内容的长度。
+使用方法：根据您的需求，设置每次对话中的最大令牌数。
+expires_in_seconds：
+
+作用：会话过期时间，指定会话在多长时间后过期，需要重新创建会话。
+使用方法：根据您的需求，设置会话的过期时间。
+character_desc：
+
+作用：洛林AI的角色描述，用于向用户介绍洛林AI的身份和功能。
+使用方法：根据您的需求，设置洛林AI的角色描述。
+subscribe_msg：
+
+作用：关注公众号时发送的欢迎消息，向用户展示洛林AI的功能和指令。
+使用方法：根据您的需求，设置关注公众号时发送的欢迎消息内容。
+max_daily_replies：
+
+作用：每个用户每天的最大回复次数限制。
+使用方法：根据您的需求，设置每个用户每天的最大回复次数限制。
+max_hourly_replies：
+
+作用：每个用户每小时的最大回复次数限制。
+使用方法：根据您的需求，设置每个用户每小时的最大回复次数限制。
+max_message_length：
+
+作用：消息的最大长度限制，超过该长度的消息将被视为无效。
+使用方法：根据您的需求，设置消息的最大长度限制。
+db_path：
+
+作用：持久化存储数据库的路径，用于存储会话数据。
+使用方法：根据您的需求，设置持久化存储数据库的路径。
+bot_prefix：
+
+作用：洛林AI回复消息时的前缀，用于区分洛林AI的回复。
+使用方法：根据您的需求，设置洛林AI回复消息时的前缀。
+error_message：
+
+作用：发生错误时作为错误回复的默认错误消息。
+使用方法：根据您的需求，设置发生错误时的默认错误消息。
+}
+```
+}
+##基于知识库的企业微信应用号配置
 {
   "luolinai_api_key": "请输入您的知识库密钥",
   "luolinai_model_id": "请输入您的知识库模型ID",
@@ -145,10 +228,8 @@ pip3 install azure-cognitiveservices-speech
   "wechatcomapp_token": "请输入您的应用Token",
   "wechatcomapp_aes_key": "请输入您的应用AES Key",
   "wechatcomapp_port": 9200
-}
 
-}
-```
+
 **配置说明：**
 
 **1.个人聊天**
