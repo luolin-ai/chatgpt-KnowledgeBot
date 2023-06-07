@@ -42,7 +42,6 @@ class luolinaiBot(Bot):
         # Continue processing the reply as before...
         reply = self._chat(query, context)
 
-        reply.content += "\n" + self.ad_message  # 在回复内容后添加广告
         return reply
 
     def _chat(self, query, context, retry_count=0):
@@ -59,7 +58,6 @@ class luolinaiBot(Bot):
 
             luolinai_api_key = conf().get("luolinai_api_key")
             model_id = conf().get("luolinai_model_id")
-            ad_message = self.ad_message
 
             prompts = []
             for msg in session.messages:
@@ -86,11 +84,15 @@ class luolinaiBot(Bot):
                 res = response.json()
                 chat_reply = res.get("data")
                 if isinstance(chat_reply, str):
-                    chat_reply_with_ad = chat_reply + "\n\n" + ad_message
+                    ad_prefix = "🌟🌟🌟 广告 🌟🌟🌟"
+                    ad_separator = "\n✨✨✨✨✨✨✨✨✨✨"
+                    ad_message = f"\n{ad_separator}\n{self.ad_message}\n{ad_separator}"
+                    styled_ad_prefix = f"**{ad_prefix}**"
+                    chat_reply_with_ad = chat_reply + f"\n{styled_ad_prefix}{ad_message}"
+                    return Reply(ReplyType.TEXT, chat_reply_with_ad)
                 else:
                     logger.error(f"[luolinai] 回复类型不正确: {type(chat_reply)}")
-                    chat_reply_with_ad = str(chat_reply) + "\n\n" + ad_message
-                return Reply(ReplyType.TEXT, chat_reply_with_ad)
+                    return Reply(ReplyType.TEXT, str(chat_reply))
 
             else:
                 time.sleep(2)

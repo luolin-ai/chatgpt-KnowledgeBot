@@ -35,7 +35,8 @@ available_setting = {
     "image_create_size": "256x256",  # 图片大小,可选有 256x256, 512x512, 1024x1024
     # chatgpt会话参数
     "expires_in_seconds": 3600,  # 无操作会话的过期时间
-    "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",  # 人格描述
+    "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",
+    # 人格描述
     "conversation_max_tokens": 1000,  # 支持上下文记忆的最多字符数
     # chatgpt限流配置
     "rate_limit_chatgpt": 20,  # chatgpt的调用频率限制
@@ -108,13 +109,17 @@ available_setting = {
     "luolinai_model_id": "",  # your_model_id
     "max_single_chat_replies": "",
     "max_group_chat_replies": "",
-    "ad_message": "",  # 这是一条广告信息，请点击这里查看更多。,
+    "ad_message": "",
     "max_daily_replies": "",
+    "max_hourly_replies": "",
+    "max_message_length": "",
+    "db_path": "",
+    "bot_prefix": "",
+    "error_message": "",
+
+
 
 }
-
-
-
 
 
 class Config(dict):

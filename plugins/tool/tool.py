@@ -5,14 +5,14 @@ from chatgpt_tool_hub.apps import AppFactory
 from chatgpt_tool_hub.apps.app import App
 from chatgpt_tool_hub.tools.all_tool_list import get_all_tool_names
 
-import plugins
+from plugins.plugin import Plugin
 from bridge.bridge import Bridge
 from bridge.context import ContextType
 from bridge.reply import Reply, ReplyType
 from common import const
 from common.log import logger
 from config import conf
-from plugins import *
+from plugins import plugins
 
 
 @plugins.register(
@@ -98,7 +98,7 @@ class Tool(Plugin):
                 all_sessions = Bridge().get_bot("chat").sessions
                 user_session = all_sessions.session_query(query, e_context["context"]["session_id"]).messages
 
-                # chatgpt-tool-hub will reply you with many tools
+                # chatgpt-tool-hub will reply to you with many tools
                 logger.debug("[tool]: just-go")
                 try:
                     _reply = self.app.ask(query, user_session)
@@ -135,7 +135,7 @@ class Tool(Plugin):
         return {
             "debug": kwargs.get("debug", False),
             "openai_api_key": conf().get("open_ai_api_key", ""),
-            "open_ai_api_base": conf().get("open_ai_api_base", "https://api.openai.com/v1"),
+            "openai_api_base": conf().get("open_ai_api_base", "https://api.openai.com/v1"),
             "proxy": conf().get("proxy", ""),
             "request_timeout": request_timeout if request_timeout else conf().get("request_timeout", 120),
             # note: 目前tool暂未对其他模型测试，但这里仍对配置来源做了优先级区分，一般插件配置可覆盖全局配置
@@ -178,7 +178,7 @@ class Tool(Plugin):
         app = AppFactory()
         app.init_env(**app_kwargs)
 
-        # filter not support tool
+        # filter unsupported tools
         tool_list = self._filter_tool_list(tool_config.get("tools", []))
 
         return app.create_app(tools_list=tool_list, **app_kwargs)
