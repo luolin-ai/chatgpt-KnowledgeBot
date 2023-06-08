@@ -84,7 +84,7 @@ class luolinaiBot(Bot):
                 res = response.json()
                 chat_reply = res.get("data")
                 if isinstance(chat_reply, str):
-                    ad_prefix = "🌟🌟🌟 广告 🌟🌟🌟"
+                    ad_prefix = "🌟🌟🌟 🌟🌟🌟"
                     ad_separator = "\n✨✨✨✨✨✨✨✨✨✨"
                     ad_message = f"\n{ad_separator}\n{self.ad_message}\n{ad_separator}"
                     styled_ad_prefix = f"**{ad_prefix}**"
