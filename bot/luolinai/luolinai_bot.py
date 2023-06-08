@@ -1,4 +1,6 @@
 import datetime
+import time
+
 import requests
 from common.log import logger
 from bridge.context import Context
@@ -7,6 +9,8 @@ from bot.bot import Bot
 from bot.chatgpt.chat_gpt_session import ChatGPTSession
 from bot.session_manager import SessionManager
 from config import conf
+from common.database import Database
+
 
 class luolinaiBot(Bot):
     AUTH_FAILED_CODE = 401
@@ -20,6 +24,10 @@ class luolinaiBot(Bot):
         self.max_single_chat_replies = conf().get("max_single_chat_replies")
         self.max_group_chat_replies = conf().get("max_group_chat_replies")
         self.ad_message = conf().get("ad_message")
+        self.database = Database()
+
+    def __del__(self):
+        self.database.close()
 
     def reply(self, query, context: Context = None) -> Reply:
         # Get the WeChat nickname from the context
@@ -89,6 +97,7 @@ class luolinaiBot(Bot):
                     ad_message = f"\n{ad_separator}\n{self.ad_message}\n{ad_separator}"
                     styled_ad_prefix = f"**{ad_prefix}**"
                     chat_reply_with_ad = chat_reply + f"\n{styled_ad_prefix}{ad_message}"
+                    self.database.insert_chat(session_id, query, chat_reply_with_ad)
                     return Reply(ReplyType.TEXT, chat_reply_with_ad)
                 else:
                     logger.error(f"[luolinai] 回复类型不正确: {type(chat_reply)}")
