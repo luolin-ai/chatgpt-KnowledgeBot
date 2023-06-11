@@ -12,7 +12,8 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 让我们一起与 KnowledgeBot-WeChatGPT 探索知识的深度和语言的魅力，体验与智能机器人的精彩互动！
 
 ###欢迎wxKnowledgeBot群
-![04be8dc33ffc40738aaff2926c6a1dd](https://github.com/luolin-ai/KnowledgeBot/assets/135555634/722e30ed-d1b6-4904-af45-c7680132c3d3)
+![024ab0c3f8803fea911cce0f4806071](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/22250bc7-db8a-4787-b86a-8d977fc91025)
+
 
 
 最新版本支持的功能如下：
@@ -65,7 +66,7 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 **(1) 克隆项目代码：**
 ```bash
 git clone https://github.com/luolin-ai/chatgpt-KnowledgeBot
-cd KnowledgeBot/
+cd chatgpt-KnowledgeBot/
 ```
 
 **(2) 安装核心依赖 (必选)：**
