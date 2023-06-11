@@ -11,13 +11,14 @@ KnowledgeBot-WeChatGPT 在微信平台上实现了自动回复的功能，用户
 KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交流体验，通过结合私有化的知识库和 GPT 预训练模型，为用户提供个性化、准确的回答和互动。它将成为用户在微信平台上获取知识和享受智能交流的首选伙伴。
 让我们一起与 KnowledgeBot-WeChatGPT 探索知识的深度和语言的魅力，体验与智能机器人的精彩互动！
 
-###欢迎wxKnowledgeBot群
+###欢迎wxKnowledgeBot群：
+
 ![024ab0c3f8803fea911cce0f4806071](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/a4ea95b0-7cbc-4c00-9a49-11ae5c71bb07)
 
 
 
 
-最新版本支持的功能如下：
+###最新版本支持的功能如下：
 
 - [x] **多端部署：** 有多种部署方式可选择且功能完备，目前已支持个人微信，微信公众号和企业微信应用等部署方式
 - [x] **基础对话：** 私聊及群聊的消息智能回复，支持多轮会话上下文记忆，支持 GPT-3，GPT-3.5，GPT-4模型
