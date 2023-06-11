@@ -63,8 +63,8 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 > 建议Python版本在 3.7.1~3.9.X 之间，推荐3.8版本，3.10及以上版本在 MacOS 可用，其他系统上不确定能否正常运行。
 
 **(1) 克隆项目代码：**
-git clone https://github.com/luolin-ai/KnowledgeBot
 ```bash
+git clone https://github.com/luolin-ai/chatgpt-KnowledgeBot
 cd KnowledgeBot/
 ```
 
