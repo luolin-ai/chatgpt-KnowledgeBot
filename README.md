@@ -1,5 +1,5 @@
-了# 简介   
-# # KnowledgeBot-WeChatGPT-FASTGPT
+# 简介   
+# # KnowledgeBot-WeChatGPT-FASTGPT+chatgpt-on-wechat
 基于微信机器人zhayujie/chatgpt-on-wechat结合fastGPT知识库的一个知识库微信、企业微信、飞书机器人
 # ## 项目名称: "KnowledgeBot-WeChatGPT"
 
