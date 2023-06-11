@@ -1,6 +1,7 @@
 {
   "luolinai_api_key": "请输入您的知识库密钥",
   "luolinai_model_id": "请输入您的知识库模型ID",
+   "base_url":"https://api.gojiberrys.cn/api/openapi",
   "image_create_prefix": [
     "画",
     "看",

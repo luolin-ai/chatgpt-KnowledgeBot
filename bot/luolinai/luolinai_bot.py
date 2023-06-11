@@ -16,7 +16,7 @@ class luolinaiBot(Bot):
     AUTH_FAILED_CODE = 401
 
     def __init__(self):
-        self.base_url = "https://api.gojiberrys.cn/api/openapi"
+        self.base_url = conf().get("base_url") or "https://api.gojiberrys.cn/api/openapi"
         self.sessions = SessionManager(ChatGPTSession, model=conf().get("model") or "gpt-3.5-turbo")
         self.reply_counts = {}
         self.last_update_date = datetime.date.today()

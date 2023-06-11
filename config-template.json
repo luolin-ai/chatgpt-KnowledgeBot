@@ -1,6 +1,7 @@
 {
   "luolinai_api_key": "YOUR_LUOLINAI_API_KEY",
   "luolinai_model_id": "YOUR_LUOLINAI_MODEL_ID",
+    "base_url":"https://api.gojiberrys.cn/api/openapi",
   "max_single_chat_replies": 100,
   "max_group_chat_replies": 100,
   "ad_message": "此处广告",

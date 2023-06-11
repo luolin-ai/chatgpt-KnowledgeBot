@@ -1,13 +1,13 @@
 {
   "luolinai_api_key": "YOUR_LUOLINAI_API_KEY",
   "luolinai_model_id": "YOUR_LUOLINAI_MODEL_ID",
-
-    "channel_type": "wechatmp,",
-    "wechatmp_token": "微信公众平台的Token",
-    "wechatmp_port": 8080,  #微信公众平台的端口,需要端口转发到80或443
-    "wechatmp_app_id": "微信公众平台的appID",
-    "wechatmp_app_secret": "微信公众平台的appsecret",
-    "wechatmp_aes_key": "微信公众平台的EncodingAESKey，加密模式需要",
+  "base_url":"https://api.gojiberrys.cn/api/openapi",
+  "channel_type": "wechatmp,",
+  "wechatmp_token": "微信公众平台的Token",
+  "wechatmp_port": 8080,  #微信公众平台的端口,需要端口转发到80或443设置后请删除 #后面的话
+  "wechatmp_app_id": "微信公众平台的appID",
+  "wechatmp_app_secret": "微信公众平台的appsecret",
+  "wechatmp_aes_key": "微信公众平台的EncodingAESKey，加密模式需要",
   "max_single_chat_replies": 100,
   "max_group_chat_replies": 100,
   "speech_recognition": false,

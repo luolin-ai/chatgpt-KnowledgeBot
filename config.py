@@ -116,7 +116,7 @@ available_setting = {
     "db_path": "",
     "bot_prefix": "",
     "error_message": "",
-
+    "base_url": "",
 
 
 }
