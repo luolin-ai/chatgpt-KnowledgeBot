@@ -91,14 +91,28 @@ class luolinaiBot(Bot):
             if response.status_code == 200:
                 res = response.json()
                 chat_reply = res.get("data")
-                if isinstance(chat_reply, str):
+
+                # 在这里修改广告信息的处理部分
+                ad_message = conf().get("ad_message")
+                if isinstance(chat_reply, str) and ad_message:
                     ad_prefix = "🌟🌟🌟 🌟🌟🌟"
                     ad_separator = "\n✨✨✨✨✨✨✨✨✨✨"
-                    ad_message = f"\n{ad_separator}\n{self.ad_message}\n{ad_separator}"
+                    ad_message = f"\n{ad_separator}\n{ad_message}\n{ad_separator}"
                     styled_ad_prefix = f"**{ad_prefix}**"
                     chat_reply_with_ad = chat_reply + f"\n{styled_ad_prefix}{ad_message}"
                     self.database.insert_chat(session_id, query, chat_reply_with_ad)
                     return Reply(ReplyType.TEXT, chat_reply_with_ad)
+
+                if isinstance(chat_reply, str):
+                    self.database.insert_chat(session_id, query, chat_reply)
+                    return Reply(ReplyType.TEXT, chat_reply)
+
+                # 添加以下两行代码来处理其他类型的回复
+                elif isinstance(chat_reply, dict) and chat_reply.get("type") == "text":
+                    reply_text = chat_reply.get("message")
+                    self.database.insert_chat(session_id, query, reply_text)
+                    return Reply(ReplyType.TEXT, reply_text)
+
                 else:
                     logger.error(f"[luolinai] 回复类型不正确: {type(chat_reply)}")
                     return Reply(ReplyType.TEXT, str(chat_reply))
@@ -112,4 +126,9 @@ class luolinaiBot(Bot):
             logger.error(f"[luolinai] 异常: {str(e)}")
             if 'response' in locals():
                 logger.error(f"[luolinai] API响应内容: {response.content.decode('utf-8')}")
-            return Reply(ReplyType.ERROR, "发生错误，请再试一次。")
+
+            # 发生错误时，检查配置文件是否存在广告信息，如果存在则返回广告信息作为错误提示
+            ad_message = conf().get("ad_message")
+            if ad_message:
+                return Reply(ReplyType.ERROR, ad_message)
+
