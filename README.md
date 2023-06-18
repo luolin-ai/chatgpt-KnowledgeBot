@@ -31,8 +31,8 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 # 快速开始
 
 # 基于自己私有化知识库的的微信机器人
-点此登录洛林AI知识交互中心网站 {https://api.gojiberrys.cn/}
-点击创建AI
+点此登录洛林AI知识交互中心网站 {(https://aiwis.cn/)}
+[点击创建](https://aiwis.cn/)
 [![img_3](https://github.com/luolin-ai/KnowledgeBot/assets/135555634/9ee74435-c05b-48f7-aa96-1f854787f100)]
 如何创建知识库，
 ![img_4](https://github.com/luolin-ai/KnowledgeBot/assets/135555634/43f444ee-9659-4078-b8fe-f773e1794ac4)导入知识之手动方式
