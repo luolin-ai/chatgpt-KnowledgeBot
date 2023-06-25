@@ -2,7 +2,7 @@
   "luolinai_api_key": "YOUR_LUOLINAI_API_KEY",
   "luolinai_model_id": "YOUR_LUOLINAI_MODEL_ID",
   "base_url":"https://api.gojiberrys.cn/api/openapi",
-  "channel_type": "wechatmp,",
+  "channel_type": "wechatmp",
   "wechatmp_token": "微信公众平台的Token",
   "wechatmp_port": 8080,  #微信公众平台的端口,需要端口转发到80或443设置后请删除 #后面的话
   "wechatmp_app_id": "微信公众平台的appID",
