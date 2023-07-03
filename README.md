@@ -1,6 +1,7 @@
 # 简介   
 # # KnowledgeBot-WeChatGPT-FASTGPT+chatgpt-on-wechat
 基于微信机器人zhayujie/chatgpt-on-wechat结合fastGPT知识库的一个知识库微信、企业微信、飞书机器人
+## 企业微信机器人项目：https://github.com/luolin-ai/Enterprise-WeChat-GPTbot
 # ## 项目名称: "KnowledgeBot-WeChatGPT"
 
 项目介绍:
@@ -14,7 +15,7 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 ##欢迎wxKnowledgeBot群：
 
 
-![微信图片_20230627154622](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/956cbabd-c60a-4bec-bfc5-93c979225539)
+![微信图片3445](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/6f569029-1515-412a-9f4b-625f86e28fb7)
 
 
 
