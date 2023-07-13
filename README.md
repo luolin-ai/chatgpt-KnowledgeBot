@@ -14,8 +14,7 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 #
 ##欢迎wxKnowledgeBot群：
 
-
-![微信图片3445](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/6f569029-1515-412a-9f4b-625f86e28fb7)
+![微信43图片_20230714013957](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/b762d52e-3966-43fd-a002-879210dbddcc)
 
 
 
