@@ -13,7 +13,7 @@ KnowledgeBot-WeChatGPT 的目标是为用户提供高效、智能、有趣的交
 让我们一起与 KnowledgeBot-WeChatGPT 探索知识的深度和语言的魅力，体验与智能机器人的精彩互动！
 #
 # 扫码添加进入交流群
-![25222600](https://github.com/luolin-ai/chatgpt-KnowledgeBot/assets/135555634/d816a261-9d62-489b-b0bd-43751a9521f2)
+![4444444](https://github.com/luolin-ai/Enterprise-WeChat-GPTbot/assets/135555634/289954f8-851f-4e74-9529-30729f07c5d0)
 
 
 
