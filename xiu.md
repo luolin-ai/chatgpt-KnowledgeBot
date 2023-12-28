@@ -196,3 +196,33 @@ members. | In the multivariable analysis, adjusting for other cathepsin types, n
 ---
 
 我将继续润色文档中的下一段。请稍候。
+
+子以提高清晰度，并增加逗号以改善句子流畅性。 |
+
+#### 重写的段落
+"We recognize certain limitations within this study. Firstly, the analysis relies exclusively on GWAS data from individuals of European ancestry, which may limit the generalizability of the results. Subsequent research and validation are required to ascertain the applicability of these findings to populations with diverse genetic backgrounds and ancestries, such as Asian populations. Secondly, this study elucidates only the causal relationship between cathepsins in blood and neurodegenerative diseases, and does not assess the correlation with cathepsin levels in cerebrospinal fluid or region-specific brain tissues."
+
+---
+
+我将继续润色文档中的下一段。请稍候。
+
+### 段落润色
+
+#### 段落原文
+"In summary this MR study provides evidence supporting the association of elevated cathepsin H levels with a higher risk of AD and DLB as well as the association of decreased cathepsin B levels with an increased risk of PD. The causal relationship between cathepsin H and ALS risk appears to be weaker limiting its practical application in clinical settings warranting further investigation. Currently the evidence from univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. Our study results offer new insights into the development of novel biomarkers and potential therapeutic targets for several common types of NDs."
+
+#### 修改表
+
+| 原句 | 修改后的句子部分 | 解释 |
+| ---- | ---------------- | ---- |
+| In summary this MR study provides evidence supporting the association of elevated cathepsin H levels with a higher risk of AD and DLB as well as the association of decreased cathepsin B levels with an increased risk of PD. | In summary, this MR study provides evidence supporting the association of elevated cathepsin H levels with a higher risk of AD and DLB, as well as the association of decreased cathepsin B levels with an increased risk of PD. | 添加逗号以改善句子的流畅性，并分隔复杂的句子结构。 |
+| The causal relationship between cathepsin H and ALS risk appears to be weaker limiting its practical application in clinical settings warranting further investigation. | The causal relationship between cathepsin H and ALS risk appears to be weaker, thereby limiting its practical application in clinical settings and warranting further investigation. | 添加逗号以分隔句子，并使用“thereby”来明确指出结果的影响。 |
+| Currently the evidence from univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. | Currently, evidence from univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. | 添加逗号以提高句子的可读性。 |
+| Our study results offer new insights into the development of novel biomarkers and potential therapeutic targets for several common types of NDs. | Our study provides new insights into the development of novel biomarkers and potential therapeutic targets for various common neurodegenerative diseases (NDs). | 使用“provides”来代替“offer”以增加正式性，并明确指出“neurodegenerative diseases”以提高清晰度。 |
+
+#### 重写的段落
+"In summary, this MR study provides evidence supporting the association of elevated cathepsin H levels with a higher risk of AD and DLB, as well as the association of decreased cathepsin B levels with an increased risk of PD. The causal relationship between cathepsin H and ALS risk appears to be weaker, thereby limiting its practical application in clinical settings and warranting further investigation. Currently, evidence from univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. Our study provides new insights into the development of novel biomarkers and potential therapeutic targets for various common neurodegenerative diseases (NDs)."
+
+---
+
+这是对您文件中最后一个段落的润色。如果您需要进一步的帮助或对其他部分进行润色，请告知。
