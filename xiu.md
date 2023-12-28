@@ -66,22 +66,43 @@
 
 我将继续润色文档中的下一段。请稍候。
 
+
 ### 段落润色
 
 #### 段落原文
-"Conclusion: The evidence from the MR study supports an association between elevated levels of cathepsin H and an increased risk of AD and DLB. There is a bidirectional causal relationship between cathepsin B and PD. The causal relationship between cathepsin H and ALS risk is weaker and evidence from both univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. These findings provide valuable insights into potential biomarkers for early diagnosis and future therapeutic targets."
+"In recent years researchers have undertaken comprehensive investigations into the pathogenic mechanisms underlying neurodegenerative diseases with a heightened focus on the role of cathepsins. Cathepsins represent a class of enzymes responsible for protein breakdown within the biological organism and their activity intricately correlates with the delicate balance of protein degradation and synthesis within cells. In the context of neurodegenerative diseases the abnormal activity of cathepsins and protein degradation is often intricately linked to disease development and neuronal death."
 
 #### 修改表
 
 | 原句 | 修改后的句子部分 | 解释 |
 | ---- | ---------------- | ---- |
-| The evidence from the MR study supports an association between elevated levels of cathepsin H and an increased risk of AD and DLB. | The evidence garnered from the MR study corroborates an association between elevated levels of cathepsin H and an increased risk of AD and DLB. | 使用“garnered”和“corroborates”增加正式性，并提高学术表达水平。 |
-| There is a bidirectional causal relationship between cathepsin B and PD. | A bidirectional causal relationship has been established between cathepsin B and PD. | 改善了句子结构，使之更加明确和学术化。 |
-| The causal relationship between cathepsin H and ALS risk is weaker and evidence from both univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. | The causal relationship between cathepsin H and ALS risk appears to be weaker, and evidence from both univariable MR and MVMR analyses fails to support a causal relationship between cathepsins and MS. | 增加了“appears to be”以增强语句的准确性，并改用“fails to support”来强调研究结果的负面方面。 |
-| These findings provide valuable insights into potential biomarkers for early diagnosis and future therapeutic targets. | These findings yield valuable insights into potential biomarkers for early diagnosis and prospective therapeutic targets. | 使用“yield”和“prospective”来增强学术表达和前瞻性。 |
+| In recent years researchers have undertaken comprehensive investigations into the pathogenic mechanisms underlying neurodegenerative diseases with a heightened focus on the role of cathepsins. | Recently, researchers have conducted extensive investigations into the pathogenic mechanisms underlying neurodegenerative diseases, with an intensified focus on the role of cathepsins. | 使用“Recently”开始以简化句子，并添加逗号以改善流畅度。 |
+| Cathepsins represent a class of enzymes responsible for protein breakdown within the biological organism and their activity intricately correlates with the delicate balance of protein degradation and synthesis within cells. | Cathepsins, a class of enzymes crucial for protein breakdown in biological organisms, exhibit activity that intricately correlates with the delicate equilibrium of protein degradation and synthesis within cells. | 重构句子以增强清晰度并增加学术语气。 |
+| In the context of neurodegenerative diseases the abnormal activity of cathepsins and protein degradation is often intricately linked to disease development and neuronal death. | In neurodegenerative diseases, abnormal cathepsin activity and protein degradation are often intricately linked to the development of disease and neuronal death. | 使用逗号分隔句子，以及重新排列单词以提高清晰度和学术风格。 |
 
 #### 重写的段落
-"The evidence garnered from the MR study corroborates an association between elevated levels of cathepsin H and an increased risk of AD and DLB. A bidirectional causal relationship has been established between cathepsin B and PD. The causal relationship between cathepsin H and ALS risk appears to be weaker, and evidence from both univariable MR and MVMR analyses fails to support a causal relationship between cathepsins and MS. These findings yield valuable insights into potential biomarkers for early diagnosis and prospective therapeutic targets."
+"Recently, researchers have conducted extensive investigations into the pathogenic mechanisms underlying neurodegenerative diseases, with an intensified focus on the role of cathepsins. Cathepsins, a class of enzymes crucial for protein breakdown in biological organisms, exhibit activity that intricately correlates with the delicate equilibrium of protein degradation and synthesis within cells. In neurodegenerative diseases, abnormal cathepsin activity and protein degradation are often intricately linked to the development of disease and neuronal death."
+
+---
+
+我将继续润色文档中的下一段。请稍等。
+
+### 段落润色
+
+#### 段落原文
+"Dementia with Lewy bodies (DLB) is the second most common degenerative neurocognitive disorder surpassed only by Alzheimer's disease (AD). DLB is characterized by early-onset dementia rapid progression and a significant negative impact on the quality of life [12]. Currently the diagnosis of DLB relies mainly on clinical symptoms and there is a lack of effective biomarkers for early disease detection. Reports indicate elevated mRNA levels of lysosomal cathepsin B and cathepsin D in DLB brain tissues with only an increase in cathepsin B enzymatic activity [13]."
+
+#### 修改表
+
+| 原句 | 修改后的句子部分 | 解释 |
+| ---- | ---------------- | ---- |
+| Dementia with Lewy bodies (DLB) is the second most common degenerative neurocognitive disorder surpassed only by Alzheimer's disease (AD). | Dementia with Lewy bodies (DLB) ranks as the second most prevalent degenerative neurocognitive disorder, surpassed only by Alzheimer's disease (AD). | 使用“ranks as”和“prevalent”来增强语句的正式性。 |
+| DLB is characterized by early-onset dementia rapid progression and a significant negative impact on the quality of life [12]. | DLB is characterized by early-onset dementia, rapid progression, and a profound negative impact on quality of life [12]. | 通过添加逗号改善了语法结构，并使用“profound”来强调影响。 |
+| Currently the diagnosis of DLB relies mainly on clinical symptoms and there is a lack of effective biomarkers for early disease detection. | Currently, the diagnosis of DLB primarily depends on clinical symptoms, and there exists a notable lack of effective biomarkers for early disease detection. | 添加逗号以提高可读性，并使用“primarily depends”和“notable lack”增加学术性。 |
+| Reports indicate elevated mRNA levels of lysosomal cathepsin B and cathepsin D in DLB brain tissues with only an increase in cathepsin B enzymatic activity [13]. | Studies report elevated mRNA levels of lysosomal cathepsin B and cathepsin D in DLB brain tissues, with a notable increase in cathepsin B enzymatic activity [13]. | 使用“Studies report”替换“Reports indicate”以提高正式性，并通过添加逗号改进句子结构。 |
+
+#### 重写的段落
+"Dementia with Lewy bodies (DLB) ranks as the second most prevalent degenerative neurocognitive disorder, surpassed only by Alzheimer's disease (AD). DLB is characterized by early-onset dementia, rapid progression, and a profound negative impact on quality of life [12]. Currently, the diagnosis of DLB primarily depends on clinical symptoms, and there exists a notable lack of effective biomarkers for early disease detection. Studies report elevated mRNA levels of lysosomal cathepsin B and cathepsin D in DLB brain tissues, with a notable increase in cathepsin B enzymatic activity [13]."
 
 ---
 
