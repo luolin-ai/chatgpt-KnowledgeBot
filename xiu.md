@@ -65,3 +65,24 @@
 ---
 
 我将继续润色文档中的下一段。请稍候。
+
+### 段落润色
+
+#### 段落原文
+"Conclusion: The evidence from the MR study supports an association between elevated levels of cathepsin H and an increased risk of AD and DLB. There is a bidirectional causal relationship between cathepsin B and PD. The causal relationship between cathepsin H and ALS risk is weaker and evidence from both univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. These findings provide valuable insights into potential biomarkers for early diagnosis and future therapeutic targets."
+
+#### 修改表
+
+| 原句 | 修改后的句子部分 | 解释 |
+| ---- | ---------------- | ---- |
+| The evidence from the MR study supports an association between elevated levels of cathepsin H and an increased risk of AD and DLB. | The evidence garnered from the MR study corroborates an association between elevated levels of cathepsin H and an increased risk of AD and DLB. | 使用“garnered”和“corroborates”增加正式性，并提高学术表达水平。 |
+| There is a bidirectional causal relationship between cathepsin B and PD. | A bidirectional causal relationship has been established between cathepsin B and PD. | 改善了句子结构，使之更加明确和学术化。 |
+| The causal relationship between cathepsin H and ALS risk is weaker and evidence from both univariable MR and MVMR analyses does not support a causal relationship between cathepsins and MS. | The causal relationship between cathepsin H and ALS risk appears to be weaker, and evidence from both univariable MR and MVMR analyses fails to support a causal relationship between cathepsins and MS. | 增加了“appears to be”以增强语句的准确性，并改用“fails to support”来强调研究结果的负面方面。 |
+| These findings provide valuable insights into potential biomarkers for early diagnosis and future therapeutic targets. | These findings yield valuable insights into potential biomarkers for early diagnosis and prospective therapeutic targets. | 使用“yield”和“prospective”来增强学术表达和前瞻性。 |
+
+#### 重写的段落
+"The evidence garnered from the MR study corroborates an association between elevated levels of cathepsin H and an increased risk of AD and DLB. A bidirectional causal relationship has been established between cathepsin B and PD. The causal relationship between cathepsin H and ALS risk appears to be weaker, and evidence from both univariable MR and MVMR analyses fails to support a causal relationship between cathepsins and MS. These findings yield valuable insights into potential biomarkers for early diagnosis and prospective therapeutic targets."
+
+---
+
+我将继续润色文档中的下一段。请稍候。
